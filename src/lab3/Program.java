@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Program {
 	
 	public static void main(String[] args) {
-//		System.out.println("What is the total weight(in pounds)?");
-//		Scanner amount = new Scanner(System.in);
-//	convertInputToStonesPounds(amount.nextInt());
-//	 System.out.println("What is the total weight(in Kg's)?");
-//	convertKgsToStonesPounds(amount.nextInt());
-		System.out.println(theLunchQueue());
+		System.out.println("What is the total weight(in pounds)?");
+		Scanner amount = new Scanner(System.in);
+	convertInputToStonesPounds(amount.nextInt());
+	 System.out.println("What is the total weight(in Kg's)?");
+	convertKgsToStonesPounds(amount.nextInt());
+		//System.out.println(theLunchQueue());
 		}
 
 	public static String theLunchQueue() {
@@ -27,9 +27,10 @@ public class Program {
 	}
 	
 	static void convertKgsToStonesPounds(int kg) {
-		double pounds = kg * 2.20462;
+		double pounds = kg * 2.2;
 		double stone = pounds / 14;
-		  System.out.println(kg + "kg is " + stone + " stone");
+		//double rounded = Math.round(stone);
+		System.out.printf("%dkg is %.2f stone%n", kg, stone);
 	}
 	
 
