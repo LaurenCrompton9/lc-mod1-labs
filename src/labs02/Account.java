@@ -30,4 +30,10 @@ public class Account {
 				", Owner: " + owner +
 				", Balance: " + balance;
 	}
+	public void addInterest() {
+		balance = balance * 1.25;
+	}
+	public String getOwner() {
+		return owner;
+	}
 }
